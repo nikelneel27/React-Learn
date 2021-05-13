@@ -1,38 +1,92 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  background: #373B44;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.todo-app h1 {
+  margin: 3rem;
   text-align: center;
+  font-size: 2rem;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-app-form {
+  max-width: 600px;
+  height: 80px;
+  background: rgb(71, 74, 82);
+  border-radius: 20px;
+  margin: 0 auto;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.todo-app-form input{
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 30px 0 ;
+  margin-left: 20px;
+  display: inline-block;
+  color: rgb(75, 69, 69);
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  height: 1.5rem;
+  border: none;
+}
+
+.todo-app-form input::placeholder{
+ color:rgb(64, 64, 65);
+ padding : 20px;
+}
+
+.todo-app-form input::focus{
+  outline: none;
+  
+}
+
+.todo-app-form button{
+  margin: 0 20px;
+  border-radius: 20px;
+  width: 110px;
+  border: none;
+  height: 1.5rem;
+  font-weight: bold;
+  background: rgb(189, 189, 51);
+}
+
+/* todo list  */
+.todo-list{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.todo-text-list{
+  align-items: center;
+  display: flex;
+  width: 600px;
+  height: 3rem;
+  background: rgb(247, 98, 123);
   color: white;
+  border-radius: 20px;
+  font-size:1.6rem;
+  font-weight: 500;
+  margin: 1rem;
+  padding: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#delete-button{
+  display: flex;
+ align-items: center;
+ margin:0 auto;
+ width: 5rem;
+ height: 2rem;
+ border-radius: 30px;
+ color: white;
+ background: rgb(243, 48, 48);
+ border: none;
+ font-weight: bold;
+ padding: 10px 15px;
 }
